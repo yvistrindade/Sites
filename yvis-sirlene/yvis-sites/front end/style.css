@@ -71,6 +71,17 @@
     justify-content: space-evenly;
 }
 
+.flex5{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .card{
     margin-top: 25px;
     width: 340px;
@@ -258,8 +269,51 @@ color: var(--cor2);
     padding: 25px;
     text-align: center;
     font-size: 2em;
-    font-family: var(--cor1);
+    font-family: var(--cor2);
 }
+
+/*RODAPE*/
+
+address{
+    padding: 35px 10px 50px 10px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--cor2);
+}
+
+address a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+address img{
+    padding-top: 15px;
+}
+
+.icone_local{
+    display: none;
+}
+
+.dados{
+    margin: 30px 0px 15px 0px;
+}
+
+.google.maps{
+    display: none;
+}
+
+footer{
+    padding: 50px;
+    background: var(--cor1);
+    color: var(--cor4);
+    text-align: center;
+}
+
+.social{
+    margin-bottom: 15px 0px;
+}
+
 /*CELULAR LANDESCAP - CELULAR DEITADO*/
 @media (min-width:576px) {
     .container {
@@ -281,6 +335,18 @@ color: var(--cor2);
         width: 560px;
         height: 315px;
     }
+
+/*RODAPE*/
+.flex5{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+margin: 0;
+}
+
 }
 
 /*TABLET PORTRAIT*/
@@ -401,5 +467,24 @@ color: var(--cor2);
     width: 250px;
     height: 250x;
 }
+/*RODAPE*/
+.icone_local{
+    display: inline;
+}
+
+.icone_mapa{
+    display: none;
+}
+
+.google.maps{
+    display: inline;
+}
+
+.flex6{
+    flex-direction: row-reverse;
+    font-family: var(--texto);
+    font-weight: 700;
+}
+
 
 }
