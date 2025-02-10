@@ -151,9 +151,14 @@
     object-fit: cover; /* Evita distorções */
 }
 
-.news-text h1{
+.news-text h1 {
     color: #663399;
+    border-bottom: 3px solid yellow; /* Linha amarela com 3px de espessura */
+    display: inline-block; /* Para limitar a linha ao tamanho do texto */
+    padding-bottom: 15px; /* Ajuste a distância entre o texto e a linha */
+    margin-bottom: 20px;
 }
+
 .card-body h5 {
     font-size: 15px; /* Reduz o tamanho do título */
     color: #663399;
@@ -205,6 +210,10 @@ font-size: 40px;
 .bottom-text p {
     font-size: 50px;
     color: #663399;
+    border-bottom: 3px solid yellow; /* Linha amarela */
+    padding-bottom: 5px; /* Ajusta o espaço entre o texto e a linha */
+    margin-bottom: 20px; /* Ajusta o espaço abaixo da linha */
+    display: inline-block; /* Faz a linha amarela ter o mesmo tamanho do texto */
 }
 
 .shop-btn {
@@ -392,7 +401,23 @@ font-size: 40px;
     .menu {
         width: 50%; /* Reduz um pouco a largura do menu */
     }
+
+    .top-menu {
+        flex-direction: column;
+        align-items: flex-end;
+        right: 10px;
+        gap: 10px; /* Adiciona espaço entre os itens */
+    }
+
+    .search-form {
+        margin-top: -15px; /* Move a barra um pouco para cima */
+    }
+
+    .search-input {
+        width: 120px; /* Aumenta um pouco para melhor usabilidade */
+    }
 }
+
 
 /* Ajuste para celulares pequenos e modo paisagem */
 @media (max-width: 768px) {
@@ -527,19 +552,9 @@ font-size: 40px;
 
 @media (max-width: 768px) {
     .top-menu {
-        flex-direction: column;
-        align-items: flex-end;
-        right: 10px;
-        gap: 10px; /* Adiciona espaço entre os itens */
-    }
-
-    .search-form {
-        margin-top: -5px; /* Dá um espaço acima da barra de pesquisa */
-    }
-
-    .search-input {
-        width: 50px; /* Aumenta um pouco para melhor usabilidade */
+        display: none; /* Bloqueia a exibição no celular */
     }
 }
+
 
 
